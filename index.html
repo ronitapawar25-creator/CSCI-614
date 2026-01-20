@@ -1,77 +1,93 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ronit Pawar — Portfolio</title>
-    <meta name="description" content="Ronit Pawar — personal portfolio"> 
-    <!-- HTML-only template: link external files to extend later -->
+    <meta name="description" content="Ronit Pawar — personal portfolio">
     <link rel="stylesheet" href="styles.css">
-    <!-- <script src="script.js" defer></script> -->
   </head>
   <body>
-    <!-- Top: Navigation -->
-    <header id="top" class="site-header">
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="brand" href="#">Ronit Pawar</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm Ronit Pawar</h1>
+        <p class="hero-subtitle">Cybersecurity Student & Developer</p>
+        <p class="hero-desc">I build secure systems and enjoy designing usable experiences.</p>
+        <a href="#about" class="btn">View My Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </section>
 
-    <!-- All content follows below. Each section is separated by a visible horizontal rule (<hr>). -->
-    <main>
-      <section id="about" aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <!-- Name on its own line (visibly larger when styled) -->
-        <h3 class="person-name">Ronit Pawar</h3>
-        <!-- Short description on the next line -->
-        <p class="about-desc">I build web interfaces and enjoy designing usable experiences.</p>
-      </section>
-      <hr>
-
-      <section id="projects" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">My Projects</h2>
-
-        <div class="project">
-          <h3 class="project-title">Smart Campus Security Monitoring System</h3>
-          <p class="project-desc">Designed a security monitoring system that analyzes login activity, system logs, and alerts to identify suspicious behavior across campus devices. The project focused on detecting anomalies such as unusual login locations, repeated failed attempts, and unauthorized file changes. It provided summarized alerts and basic risk scoring to help administrators respond faster to potential security incidents.</p>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9maWxlJTIwcGljdHVyZXxlbnwxfHx8fDE3NjUwMDQ5MTN8MA&ixlib=rb-4.1.0&q=80&w=400" alt="Ronit Pawar" class="profile-img">
+        <div class="about-text">
+          <p>Passionate about cybersecurity and web development, I specialize in building secure applications and monitoring systems. With experience in tools like Palo Alto Firewall, Azure, and SolarWinds, I focus on creating reliable solutions.</p>
+          <div class="contact-info">
+            <p><strong>Location:</strong> [Your Location]</p>
+            <p><strong>Email:</strong> <a href="mailto:ronit@example.com">ronit@example.com</a></p>
+            <p><strong>Experience:</strong> Student</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- one line of space between projects -->
-        <p aria-hidden="true">&nbsp;</p>
-
-        <div class="project">
-          <h3 class="project-title">Internship & Job Application Tracker Web App</h3>
-          <p class="project-desc">Built a web-based application to help students track job and internship applications in one place. Users could log company details, application status, deadlines, and interview dates. The project aimed to reduce missed deadlines and improve organization during job searches, especially for students applying to multiple roles at once.</p>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Cybersecurity</h3>
+          <ul>
+            <li>Microsoft Defender</li>
+            <li>Azure</li>
+            <li>SolarWinds</li>
+            <li>Palo Alto Firewall</li>
+          </ul>
         </div>
-      </section>
-      <hr>
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <section id="skills" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Defender</li>
-          <li>Azure</li>
-          <li>Solarwinds</li>
-          <li>Palo Alto Firewall</li>
-        </ul>
-      </section>
-      <hr>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5fGVufDF8fHx8MTc2NTAwNDkxM3ww&ixlib=rb-4.1.0&q=80&w=400" alt="Smart Campus Security">
+          <h3>Smart Campus Security Monitoring System</h3>
+          <p>Designed a security monitoring system that analyzes login activity, system logs, and alerts to identify suspicious behavior across campus devices.</p>
+          <p class="tech-stack">Tech: Python, SQL, Monitoring Tools</p>
+        </div>
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYWIgfGVufDF8fHx8MTc2NTAwNDkxM3ww&ixlib=rb-4.1.0&q=80&w=400" alt="Job Tracker">
+          <h3>Internship & Job Application Tracker Web App</h3>
+          <p>Built a web-based application to help students track job and internship applications in one place.</p>
+          <p class="tech-stack">Tech: HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact</h2>
-        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <p>Interested in collaborating or have questions? Reach out!</p>
+      <p>Email: <a href="mailto:ronit@example.com">ronit@example.com</a></p>
+      <p>Phone: [Your Phone]</p>
+    </section>
 
     <footer>
-      <p>Thank you for visiting my portfolio!</p>
+      <p>&copy; 2025 Ronit Pawar. All rights reserved.</p>
     </footer>
   </body>
 </html>
