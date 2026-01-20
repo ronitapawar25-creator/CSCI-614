@@ -168,6 +168,54 @@ h3 {
     font-size: 1.2em;
 }
 
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
 /* Footer */
 footer {
     text-align: center;
