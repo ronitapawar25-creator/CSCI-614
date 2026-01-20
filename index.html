@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ronit Pawar — Portfolio</title>
+    <meta name="description" content="Ronit Pawar — personal portfolio"> 
+    <!-- HTML-only template: link external files to extend later -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Top: Navigation -->
+    <header id="top" class="site-header">
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="brand" href="#">Ronit Pawar</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- All content follows below. Each section is separated by a visible horizontal rule (<hr>). -->
+    <main>
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <!-- Name on its own line (visibly larger when styled) -->
+        <h3 class="person-name">Ronit Pawar</h3>
+        <!-- Short description on the next line -->
+        <p class="about-desc">I build web interfaces and enjoy designing usable, usable experiences.</p>
+      </section>
+      <hr>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">My Projects</h2>
+
+        <div class="project">
+          <h3 class="project-title">Smart Campus Security Monitoring System</h3>
+          <p class="project-desc">Designed a security monitoring system that analyzes login activity, system logs, and alerts to identify suspicious behavior across campus devices. The project focused on detecting anomalies such as unusual login locations, repeated failed attempts, and unauthorized file changes. It provided summarized alerts and basic risk scoring to help administrators respond faster to potential security incidents.</p>
+        </div>
+
+        <!-- one line of space between projects -->
+        <p aria-hidden="true">&nbsp;</p>
+
+        <div class="project">
+          <h3 class="project-title">Internship & Job Application Tracker Web App</h3>
+          <p class="project-desc">Built a web-based application to help students track job and internship applications in one place. Users could log company details, application status, deadlines, and interview dates. The project aimed to reduce missed deadlines and improve organization during job searches, especially for students applying to multiple roles at once.</p>
+        </div>
+      </section>
+      <hr>
+
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Defender</li>
+          <li>Azure</li>
+          <li>Solarwinds</li>
+          <li>Palo Alto Firewall</li>
+        </ul>
+      </section>
+      <hr>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Thank you for visiting my portfolio!</p>
+    </footer>
+  </body>
+</html>
