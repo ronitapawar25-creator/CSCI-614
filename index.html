@@ -119,5 +119,28 @@
     <footer>
       <p>&copy; 2025 Ronit Pawar. All rights reserved.</p>
     </footer>
+
+    <button id="chat-toggle" class="chat-toggle" aria-label="Open resume chat">
+      Ask Anything About Me
+    </button>
+
+    <section id="resume-chat" class="chat-panel" aria-live="polite" aria-label="Chat with my resume">
+      <header class="chat-header">
+        <h2>Chat with My Resume</h2>
+        <button id="chat-close" class="chat-close" aria-label="Close chat">x</button>
+      </header>
+      <div id="chat-messages" class="chat-messages">
+        <div class="chat-message bot">
+          Hi! Ask me about Ronit's skills, projects, and background.
+        </div>
+      </div>
+      <form id="chat-form" class="chat-form">
+        <label for="chat-input">Your question</label>
+        <textarea id="chat-input" rows="3" placeholder="Example: What cybersecurity tools have you used?" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+
+    <script src="app.js"></script>
   </body>
 </html>

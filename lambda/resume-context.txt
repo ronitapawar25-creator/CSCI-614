@@ -1,0 +1,28 @@
+Name: Ronit Pawar
+Title: Cybersecurity Student and Developer
+Location: Aiken, SC
+
+Summary:
+- Builds secure systems and usable web experiences.
+- Interested in cybersecurity, cloud, and modern web development.
+
+Experience and Focus:
+- Student with practical project experience.
+- Uses monitoring and security tools in lab and project settings.
+
+Projects:
+1) Smart Campus Security Monitoring System
+- Designed a monitoring system that analyzes login activity, system logs, and alerts.
+- Goal: identify suspicious behavior across campus devices.
+- Tech: Python, SQL, monitoring tools.
+
+2) Internship and Job Application Tracker Web App
+- Built a web app to track student job and internship applications.
+- Tech: HTML, CSS, JavaScript.
+
+Skills:
+- Cybersecurity: Microsoft Defender, Azure, SolarWinds, Palo Alto Firewall.
+- Web Development: HTML, CSS, JavaScript.
+
+Contact:
+- Email: ronit@example.com
