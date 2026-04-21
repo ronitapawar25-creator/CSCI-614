@@ -1,4 +1,4 @@
-const CHAT_API_URL = window.CHAT_API_URL || "https://REPLACE_WITH_API_GATEWAY_URL/prod/chat";
+const CHAT_API_URL = window.CHAT_API_URL || "https://977nd4jze5.execute-api.us-east-1.amazonaws.com/prod/chat";
 
 const toggleButton = document.getElementById("chat-toggle");
 const closeButton = document.getElementById("chat-close");

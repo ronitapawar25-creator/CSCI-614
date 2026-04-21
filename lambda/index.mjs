@@ -15,8 +15,16 @@ export async function getSecretValue(client, secretId) {
     throw new Error("Secret value is empty or binary");
   }
 
-  const secretPayload = JSON.parse(response.SecretString);
-  return secretPayload.OPENAI_API_KEY;
+  try {
+    const secretPayload = JSON.parse(response.SecretString);
+    return secretPayload.OPENAI_API_KEY;
+  } catch {
+    const fallbackMatch = response.SecretString.match(/OPENAI_API_KEY\s*[:=]\s*\"?([^\",}\s]+)\"?/);
+    if (fallbackMatch?.[1]) {
+      return fallbackMatch[1];
+    }
+    throw new Error("Could not parse OPENAI_API_KEY from secret payload.");
+  }
 }
 
 export async function getResumeContext(filePath) {
